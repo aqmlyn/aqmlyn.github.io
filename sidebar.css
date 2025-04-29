@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    padding-left: 8px;
+    margin-top: 4px;
+    padding-top: 6px;
+    margin-bottom: 4px;
+    padding-bottom: 6px;
+    background-color: #00000000;
+    color: #ddd;
+}
+
+.item:hover {
+    background-color: #911;
+    border-left: 4px solid #f11;
+    padding-left: 4px;
+    color: #0ff;
+}
+
+.item>.icons {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60px;
+    height: 100%;
+    justify-content: left;
+    align-content: top;
+    gap: 0px;
+    float: left;
+}
+
+.item>.icons>img {
+    width: 30px;
+    height: 30px;
+}
+
+.item>img {
+    width: 60px;
+    height: 60px;
+}
+
+.item>.title {
+    margin-left: 8px;
+    height: 50%;
+}
+
+/* filters: https://codepen.io/sosuke/pen/Pjoqqp */
+
+.color-red {
+    color: #ff5566;
+}
+
+img.color-red {
+    /* #ff5566 */
+    filter: invert(45%) sepia(28%) saturate(5157%) hue-rotate(326deg) brightness(111%) contrast(101%);
+}
+
+.color-orange {
+    color: #ff8844;
+}
+
+img.color-orange {
+    /* #ff8844 */
+    filter: invert(73%) sepia(37%) saturate(5322%) hue-rotate(331deg) brightness(106%) contrast(101%);
+}
+
+.color-yellow {
+    color: #ffee44;
+}
+
+img.color-yellow {
+    /* #ffee44 */
+    filter: invert(96%) sepia(64%) saturate(1126%) hue-rotate(342deg) brightness(101%) contrast(100%);
+}
+
+.color-green {
+    color: #44ff66
+}
+
+img.color-green {
+    /* #44ff66 */
+    filter: invert(100%) sepia(25%) saturate(6523%) hue-rotate(55deg) brightness(109%) contrast(100%)
+}
+
+.color-blue {
+    color: #55aaff
+}
+
+img.color-blue {
+    /* #55aaff */
+    filter: invert(61%) sepia(49%) saturate(2254%) hue-rotate(185deg) brightness(101%) contrast(101%);
+}
+
+.color-purple {
+    color: #bb77ff;
+}
+
+img.color-purple {
+    /* #bb77ff */
+    filter: invert(50%) sepia(43%) saturate(1142%) hue-rotate(224deg) brightness(104%) contrast(101%);
+}
+
+img.color-white {
+    /* #dddddd */
+    filter: invert(96%) sepia(1%) saturate(48%) hue-rotate(314deg) brightness(92%) contrast(95%);
+}
